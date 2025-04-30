@@ -1,0 +1,79 @@
+
+# Alacritty Config - Kenzie K
+
+#	⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+#	⣶⣍⣉⠉⠉ ⠀⠀⠀⠀⠀⠐⠛⠿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡄
+#	⠹⣿⣿⣷⣦⣄⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⠁
+#	⠀⠈⠻⢯⣤⣶⡂⠀⠀⠀⠀⠀⣤⡄⠀⠀⠀⠀⠀⠀⠰⠄⠀⠀⠼⣿⡏⠀
+#	⠀⠀⠀⠈⠻⢿⣿⣶⣤⣤⣤⣾⣿⣦⣄⣀⠀⠀⣀⣽⣿⡿⠿⠛⠻⣿⣧⠀
+#	⠀⠀⠀⠀⠀⣠⣾⣿⣿⢿⣿⣿⣿⣿⣿⡿⠿⢷⣾⣭⣄⣀⠀⠀⠀⠈⠻⣇
+#	⠀⠀⠀⠀⠰⠛⠋⠁⠀⠀⠀⠀⠉⠉⠉⠀⠀⠀⠀⠀⠈⠉⠉⠒⠀⠀⠀⠀
+
+[general]
+  # Imports Tokyo Night || Catppuccin colors
+  # import = [ "~/.config/alacritty/catppuccin-mocha.toml" ]
+  import = [ "~/.config/alacritty/tokyo-night-alacritty-theme-main/tokyo-night.toml" ]
+
+# Window settings
+[window]
+  # Window dimensions
+  dimensions = { columns = 130, lines = 30 }
+  # Set window position
+  position = { x = 100, y = 100 }
+  # Padding for the window
+  padding = { x = 5, y = 5 }
+  # Transparency
+  opacity = 0.85
+  # Decorations
+  decorations = "None"
+  # Starts windowed
+  startup_mode = "Windowed"
+  # Title
+  title = "𓆟. ° .• .𓆝 .• ° . 𓆟 . ° .• .𓆞"
+  dynamic_title = false
+  # blur
+  blur = true
+  
+# Font configuration
+[font]
+  # Normal font face
+  normal = { family = "Jetbrains Mono", style = "Regular" }
+  # Bold font face
+  bold = { family = "Jetbrains Mono", style = "Bold" }
+  # Italic font face
+  italic = { family = "Jetbrains Mono", style = "Italic" }
+  # Size of the font
+  size = 15.0
+  
+# Scrollback configuration
+[scrolling]
+  # Enable/Disable scrolling
+  history = 10000
+  multiplier = 3
+
+# Mouse settings
+[mouse]
+  hide_when_typing = true
+  # Enable mouse support
+
+# Cursor settings
+[cursor]
+  # style = { "Beam", "On" }
+  # It wasnt working and pissed me off
+
+[keyboard]
+# Key bindings (for customization and extra ricing power)
+  bindings = [
+    { key = "V", mods = "Control|Shift", action = "Paste" },
+    { key = "C", mods = "Control|Shift", action = "Copy" },
+    { key = "Q", mods = "Control|Shift", action = "Quit" },
+    { key = "F11", action = "ToggleFullscreen" }
+  ]
+
+[env]
+TERM = "xterm-256color"
+
+[bell]
+animation = "Ease"
+duration = 20
+
