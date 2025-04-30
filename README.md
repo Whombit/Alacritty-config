@@ -1,4 +1,4 @@
-## Alacritty-config 🦈๋࣭⭑
+## Alacritty-config (TOML) 🦈๋࣭⭑
 
 My Alacritty config to be used with ZSH (files included)
 
