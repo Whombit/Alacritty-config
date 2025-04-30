@@ -1,5 +1,5 @@
-# Alacritty-config
-## 🦈๋࣭⭑
+## Alacritty-config 🦈๋࣭⭑
+
 My Alacritty config to be used with ZSH (files included)
 
 - Tokyo Night theme
